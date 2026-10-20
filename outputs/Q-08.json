@@ -1,0 +1,143 @@
+{
+  "question_id": "Q-08",
+  "question": "At the 2025 household water tariff, whose households paid more for water in 2025, Brightwater's or Millbrook's, and by how many million tenge?",
+  "tool_calls": [
+    {
+      "turn": 1,
+      "tool": "lookup",
+      "inputs": {
+        "query": "2025 household water tariff Brightwater households annual water payments"
+      },
+      "result": "{\"error\": \"No entries found matching '2025 household water tariff Brightwater households annual water payments'.\"}",
+      "latency_seconds": 0.0004
+    },
+    {
+      "turn": 1,
+      "tool": "lookup",
+      "inputs": {
+        "query": "2025 household water tariff Millbrook households annual water payments"
+      },
+      "result": "{\"error\": \"No entries found matching '2025 household water tariff Millbrook households annual water payments'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Brightwater"
+      },
+      "result": "[{\"doc_id\": \"\", \"title\": \"The Nine Rivers Region - about these profiles\", \"snippet\": \"The Nine Rivers Region is a fictional region made up for this homework. It has twelve districts: Ossbridge, Ossford, Tarnvale, Kelmarsh, Brightwater, Stonecairn, Harrowfield, Lindenmoor, Redfen, Ashgrove, Millbrook, Coldharbour. Each district has one profile. Unless a figure says otherwise, populati...\"}, {\"doc_id\": \"\", \"title\": \"Brightwater district profile (2025)\", \"snippet\": \"Brightwater has 17 schools, which enrolled 6,241 pupils for the 2025/26 school year. The district, founded in 1889, stretches along the Bright over 912.4 square kilometres and keeps 455.0 km of paved road. Census population: 39,902 in 2020 and 44,675 in 2025. Households used 3,315 megalitres of wate...\"}, {\"doc_id\": \"\", \"title\": \"Correction notice - Brightwater\", \"snippet\": \"Correction: the 2025 Brightwater district profile gives the district's area as 912.4 square kilometres. This is a transposition error. The correct area is 921.4 square kilometres. All other figures in that profile are correct.\"}]",
+      "latency_seconds": 0.0005
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Millbrook"
+      },
+      "result": "[{\"doc_id\": \"\", \"title\": \"The Nine Rivers Region - about these profiles\", \"snippet\": \"The Nine Rivers Region is a fictional region made up for this homework. It has twelve districts: Ossbridge, Ossford, Tarnvale, Kelmarsh, Brightwater, Stonecairn, Harrowfield, Lindenmoor, Redfen, Ashgrove, Millbrook, Coldharbour. Each district has one profile. Unless a figure says otherwise, populati...\"}, {\"doc_id\": \"\", \"title\": \"Millbrook district profile (2025)\", \"snippet\": \"Millbrook has 15 schools, which enrolled 5,562 pupils for the 2025/26 school year. The district, founded in 1897, stretches along the Mill Brook over 758.6 square kilometres and keeps 360.1 km of paved road. Census population: 34,590 in 2020 and 37,203 in 2025. Households used 2,806 megalitres of wa...\"}]",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "2025 household water tariff"
+      },
+      "result": "{\"error\": \"No entries found matching '2025 household water tariff'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 3,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Brightwater households used megalitres water 2025 tariff tenge"
+      },
+      "result": "{\"error\": \"No entries found matching 'Brightwater households used megalitres water 2025 tariff tenge'.\"}",
+      "latency_seconds": 0.0003
+    },
+    {
+      "turn": 3,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Millbrook households used megalitres water 2025 tariff tenge"
+      },
+      "result": "{\"error\": \"No entries found matching 'Millbrook households used megalitres water 2025 tariff tenge'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 3,
+      "tool": "lookup",
+      "inputs": {
+        "query": "water tariff 2025 tenge per megalitre household"
+      },
+      "result": "{\"error\": \"No entries found matching 'water tariff 2025 tenge per megalitre household'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 4,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Brightwater 3,315 megalitres"
+      },
+      "result": "{\"error\": \"No entries found matching 'Brightwater 3,315 megalitres'.\"}",
+      "latency_seconds": 0.0004
+    },
+    {
+      "turn": 4,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Millbrook 2,806 megalitres"
+      },
+      "result": "{\"error\": \"No entries found matching 'Millbrook 2,806 megalitres'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 4,
+      "tool": "lookup",
+      "inputs": {
+        "query": "households used water"
+      },
+      "result": "{\"error\": \"No entries found matching 'households used water'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 5,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Brightwater water"
+      },
+      "result": "{\"error\": \"No entries found matching 'Brightwater water'.\"}",
+      "latency_seconds": 0.0005
+    },
+    {
+      "turn": 5,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Millbrook water"
+      },
+      "result": "{\"error\": \"No entries found matching 'Millbrook water'.\"}",
+      "latency_seconds": 0.0004
+    },
+    {
+      "turn": 5,
+      "tool": "lookup",
+      "inputs": {
+        "query": "tariff"
+      },
+      "result": "[{\"doc_id\": \"\", \"title\": \"Household water tariff\", \"snippet\": \"From 1 January 2025 the regional household water tariff is 142.35 tenge per cubic metre, in every district. The 2024 tariff was 131.80 tenge per cubic metre. One megalitre is 1,000 cubic metres. The tariff is charged on household use only.\"}]",
+      "latency_seconds": 0.0003
+    },
+    {
+      "turn": 6,
+      "tool": "calculate",
+      "inputs": {
+        "expression": "(3315-2806)*1000*142.35"
+      },
+      "result": "72456150.0",
+      "latency_seconds": 0.0
+    }
+  ],
+  "final_answer": "Brightwater used 509 million more litres: 509,000 × 142.35 = 72.45615 million tenge more.\n\nANSWER: Brightwater | 72.45615 million tenge",
+  "total_seconds": 16.5856
+}

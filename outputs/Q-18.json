@@ -1,0 +1,62 @@
+{
+  "question_id": "Q-18",
+  "question": "If Millbrook's population grows by the same percentage from 2025 to 2030 as it did from 2020 to 2025, will it exceed 40,000 residents in 2030? Give the projected 2030 population.",
+  "tool_calls": [
+    {
+      "turn": 1,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Millbrook population 2020 2025 district profile"
+      },
+      "result": "{\"error\": \"No entries found matching 'Millbrook population 2020 2025 district profile'.\"}",
+      "latency_seconds": 0.0004
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Millbrook 2020 population"
+      },
+      "result": "{\"error\": \"No entries found matching 'Millbrook 2020 population'.\"}",
+      "latency_seconds": 0.0005
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Millbrook 2025 population"
+      },
+      "result": "{\"error\": \"No entries found matching 'Millbrook 2025 population'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Millbrook district profile"
+      },
+      "result": "[{\"doc_id\": \"\", \"title\": \"Millbrook district profile (2025)\", \"snippet\": \"Millbrook has 15 schools, which enrolled 5,562 pupils for the 2025/26 school year. The district, founded in 1897, stretches along the Mill Brook over 758.6 square kilometres and keeps 360.1 km of paved road. Census population: 34,590 in 2020 and 37,203 in 2025. Households used 2,806 megalitres of wa...\"}]",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 3,
+      "tool": "calculate",
+      "inputs": {
+        "expression": "37203/34590-1"
+      },
+      "result": "0.075542064180399",
+      "latency_seconds": 0.0
+    },
+    {
+      "turn": 4,
+      "tool": "calculate",
+      "inputs": {
+        "expression": "37203*(37203/34590)"
+      },
+      "result": "40013.391413703386",
+      "latency_seconds": 0.0
+    }
+  ],
+  "final_answer": "ANSWER: Yes | 40,013",
+  "total_seconds": 9.0351
+}

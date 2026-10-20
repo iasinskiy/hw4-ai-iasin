@@ -1,0 +1,89 @@
+{
+  "question_id": "Q-20",
+  "question": "Of Ossbridge, Ashgrove and Harrowfield, which district had the largest 2025 budget per resident, and by how many tenge per resident did it exceed the lowest of the three?",
+  "tool_calls": [
+    {
+      "turn": 1,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Ossbridge 2025 budget population residents per resident"
+      },
+      "result": "{\"error\": \"No entries found matching 'Ossbridge 2025 budget population residents per resident'.\"}",
+      "latency_seconds": 0.0004
+    },
+    {
+      "turn": 1,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Ashgrove 2025 budget population residents per resident"
+      },
+      "result": "{\"error\": \"No entries found matching 'Ashgrove 2025 budget population residents per resident'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 1,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Harrowfield 2025 budget population residents per resident"
+      },
+      "result": "{\"error\": \"No entries found matching 'Harrowfield 2025 budget population residents per resident'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Ossbridge"
+      },
+      "result": "[{\"doc_id\": \"\", \"title\": \"The Nine Rivers Region - about these profiles\", \"snippet\": \"The Nine Rivers Region is a fictional region made up for this homework. It has twelve districts: Ossbridge, Ossford, Tarnvale, Kelmarsh, Brightwater, Stonecairn, Harrowfield, Lindenmoor, Redfen, Ashgrove, Millbrook, Coldharbour. Each district has one profile. Unless a figure says otherwise, populati...\"}, {\"doc_id\": \"\", \"title\": \"Ossbridge district profile (2025)\", \"snippet\": \"Founded in 1871 on the Oss, Ossbridge covers 1,284.6 square kilometres. Its budget for 2025 was set at 9,284.5 million tenge. Household water use in 2025 came to 3,862 megalitres. There are 21 schools in the district, attended by 7,413 pupils in 2025/26. The 2025 census recorded 52,904 residents; th...\"}]",
+      "latency_seconds": 0.0004
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Ashgrove"
+      },
+      "result": "[{\"doc_id\": \"\", \"title\": \"The Nine Rivers Region - about these profiles\", \"snippet\": \"The Nine Rivers Region is a fictional region made up for this homework. It has twelve districts: Ossbridge, Ossford, Tarnvale, Kelmarsh, Brightwater, Stonecairn, Harrowfield, Lindenmoor, Redfen, Ashgrove, Millbrook, Coldharbour. Each district has one profile. Unless a figure says otherwise, populati...\"}, {\"doc_id\": \"\", \"title\": \"Ashgrove district profile (2025)\", \"snippet\": \"Founded in 1878 on the Ash, Ashgrove covers 1,519.2 square kilometres. Its budget for 2025 was set at 10,488.1 million tenge. Household water use in 2025 came to 4,390 megalitres. There are 24 schools in the district, attended by 8,837 pupils in 2025/26. The 2025 census recorded 58,760 residents; th...\"}]",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Harrowfield"
+      },
+      "result": "[{\"doc_id\": \"\", \"title\": \"The Nine Rivers Region - about these profiles\", \"snippet\": \"The Nine Rivers Region is a fictional region made up for this homework. It has twelve districts: Ossbridge, Ossford, Tarnvale, Kelmarsh, Brightwater, Stonecairn, Harrowfield, Lindenmoor, Redfen, Ashgrove, Millbrook, Coldharbour. Each district has one profile. Unless a figure says otherwise, populati...\"}, {\"doc_id\": \"\", \"title\": \"Harrowfield district profile (2025)\", \"snippet\": \"Founded in 1862 on the Harrow, Harrowfield covers 1,388.5 square kilometres. Its budget for 2025 was set at 16,021.7 million tenge. Household water use in 2025 came to 7,146 megalitres. There are 36 schools in the district, attended by 13,904 pupils in 2025/26. The 2025 census recorded 90,212 reside...\"}]",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 3,
+      "tool": "calculate",
+      "inputs": {
+        "expression": "9284.5*1000000/52904"
+      },
+      "result": "175497.12687131407",
+      "latency_seconds": 0.0
+    },
+    {
+      "turn": 3,
+      "tool": "calculate",
+      "inputs": {
+        "expression": "10488.1*1000000/58760"
+      },
+      "result": "178490.46970728386",
+      "latency_seconds": 0.0
+    },
+    {
+      "turn": 3,
+      "tool": "calculate",
+      "inputs": {
+        "expression": "16021.7*1000000/90212"
+      },
+      "result": "177600.54094798918",
+      "latency_seconds": 0.0
+    }
+  ],
+  "final_answer": "ANSWER: Ashgrove | 2,993.3 tenge per resident",
+  "total_seconds": 10.4485
+}

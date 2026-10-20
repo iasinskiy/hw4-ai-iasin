@@ -1,0 +1,71 @@
+{
+  "question_id": "Q-09",
+  "question": "Which district has the higher population density in 2025, Brightwater or Millbrook, and by how many residents per square kilometre?",
+  "tool_calls": [
+    {
+      "turn": 1,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Brightwater district 2025 population density population area"
+      },
+      "result": "{\"error\": \"No entries found matching 'Brightwater district 2025 population density population area'.\"}",
+      "latency_seconds": 0.0003
+    },
+    {
+      "turn": 1,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Millbrook district 2025 population density population area"
+      },
+      "result": "{\"error\": \"No entries found matching 'Millbrook district 2025 population density population area'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Brightwater"
+      },
+      "result": "[{\"doc_id\": \"\", \"title\": \"The Nine Rivers Region - about these profiles\", \"snippet\": \"The Nine Rivers Region is a fictional region made up for this homework. It has twelve districts: Ossbridge, Ossford, Tarnvale, Kelmarsh, Brightwater, Stonecairn, Harrowfield, Lindenmoor, Redfen, Ashgrove, Millbrook, Coldharbour. Each district has one profile. Unless a figure says otherwise, populati...\"}, {\"doc_id\": \"\", \"title\": \"Brightwater district profile (2025)\", \"snippet\": \"Brightwater has 17 schools, which enrolled 6,241 pupils for the 2025/26 school year. The district, founded in 1889, stretches along the Bright over 912.4 square kilometres and keeps 455.0 km of paved road. Census population: 39,902 in 2020 and 44,675 in 2025. Households used 3,315 megalitres of wate...\"}, {\"doc_id\": \"\", \"title\": \"Correction notice - Brightwater\", \"snippet\": \"Correction: the 2025 Brightwater district profile gives the district's area as 912.4 square kilometres. This is a transposition error. The correct area is 921.4 square kilometres. All other figures in that profile are correct.\"}]",
+      "latency_seconds": 0.0004
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Millbrook"
+      },
+      "result": "[{\"doc_id\": \"\", \"title\": \"The Nine Rivers Region - about these profiles\", \"snippet\": \"The Nine Rivers Region is a fictional region made up for this homework. It has twelve districts: Ossbridge, Ossford, Tarnvale, Kelmarsh, Brightwater, Stonecairn, Harrowfield, Lindenmoor, Redfen, Ashgrove, Millbrook, Coldharbour. Each district has one profile. Unless a figure says otherwise, populati...\"}, {\"doc_id\": \"\", \"title\": \"Millbrook district profile (2025)\", \"snippet\": \"Millbrook has 15 schools, which enrolled 5,562 pupils for the 2025/26 school year. The district, founded in 1897, stretches along the Mill Brook over 758.6 square kilometres and keeps 360.1 km of paved road. Census population: 34,590 in 2020 and 37,203 in 2025. Households used 2,806 megalitres of wa...\"}]",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "2025 district population density"
+      },
+      "result": "{\"error\": \"No entries found matching '2025 district population density'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 3,
+      "tool": "calculate",
+      "inputs": {
+        "expression": "44675 / 921.4"
+      },
+      "result": "48.48599956587801",
+      "latency_seconds": 0.0
+    },
+    {
+      "turn": 3,
+      "tool": "calculate",
+      "inputs": {
+        "expression": "37203 / 758.6"
+      },
+      "result": "49.041655681518584",
+      "latency_seconds": 0.0
+    }
+  ],
+  "final_answer": "ANSWER: Millbrook | 0.56 residents per square kilometre",
+  "total_seconds": 10.8945
+}

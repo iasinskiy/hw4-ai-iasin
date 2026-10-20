@@ -1,0 +1,179 @@
+{
+  "question_id": "Q-17",
+  "question": "At the 2025 household water tariff, which district's households paid more for water per resident in 2025, Harrowfield or Ossbridge, and by how many tenge per resident?",
+  "tool_calls": [
+    {
+      "turn": 1,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Harrowfield 2025 household water tariff households residents 2025"
+      },
+      "result": "{\"error\": \"No entries found matching 'Harrowfield 2025 household water tariff households residents 2025'.\"}",
+      "latency_seconds": 0.0004
+    },
+    {
+      "turn": 1,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Ossbridge 2025 household water tariff households residents 2025"
+      },
+      "result": "{\"error\": \"No entries found matching 'Ossbridge 2025 household water tariff households residents 2025'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Harrowfield"
+      },
+      "result": "[{\"doc_id\": \"\", \"title\": \"The Nine Rivers Region - about these profiles\", \"snippet\": \"The Nine Rivers Region is a fictional region made up for this homework. It has twelve districts: Ossbridge, Ossford, Tarnvale, Kelmarsh, Brightwater, Stonecairn, Harrowfield, Lindenmoor, Redfen, Ashgrove, Millbrook, Coldharbour. Each district has one profile. Unless a figure says otherwise, populati...\"}, {\"doc_id\": \"\", \"title\": \"Harrowfield district profile (2025)\", \"snippet\": \"Founded in 1862 on the Harrow, Harrowfield covers 1,388.5 square kilometres. Its budget for 2025 was set at 16,021.7 million tenge. Household water use in 2025 came to 7,146 megalitres. There are 36 schools in the district, attended by 13,904 pupils in 2025/26. The 2025 census recorded 90,212 reside...\"}]",
+      "latency_seconds": 0.0004
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Ossbridge"
+      },
+      "result": "[{\"doc_id\": \"\", \"title\": \"The Nine Rivers Region - about these profiles\", \"snippet\": \"The Nine Rivers Region is a fictional region made up for this homework. It has twelve districts: Ossbridge, Ossford, Tarnvale, Kelmarsh, Brightwater, Stonecairn, Harrowfield, Lindenmoor, Redfen, Ashgrove, Millbrook, Coldharbour. Each district has one profile. Unless a figure says otherwise, populati...\"}, {\"doc_id\": \"\", \"title\": \"Ossbridge district profile (2025)\", \"snippet\": \"Founded in 1871 on the Oss, Ossbridge covers 1,284.6 square kilometres. Its budget for 2025 was set at 9,284.5 million tenge. Household water use in 2025 came to 3,862 megalitres. There are 21 schools in the district, attended by 7,413 pupils in 2025/26. The 2025 census recorded 52,904 residents; th...\"}]",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "2025 household water tariff"
+      },
+      "result": "{\"error\": \"No entries found matching '2025 household water tariff'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 3,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Harrowfield district profile 2025 tariff"
+      },
+      "result": "{\"error\": \"No entries found matching 'Harrowfield district profile 2025 tariff'.\"}",
+      "latency_seconds": 0.0004
+    },
+    {
+      "turn": 3,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Ossbridge district profile 2025 tariff"
+      },
+      "result": "{\"error\": \"No entries found matching 'Ossbridge district profile 2025 tariff'.\"}",
+      "latency_seconds": 0.0003
+    },
+    {
+      "turn": 3,
+      "tool": "lookup",
+      "inputs": {
+        "query": "water tariff tenge per megalitre Harrowfield Ossbridge"
+      },
+      "result": "{\"error\": \"No entries found matching 'water tariff tenge per megalitre Harrowfield Ossbridge'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 4,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Harrowfield household water"
+      },
+      "result": "{\"error\": \"No entries found matching 'Harrowfield household water'.\"}",
+      "latency_seconds": 0.0004
+    },
+    {
+      "turn": 4,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Ossbridge household water"
+      },
+      "result": "{\"error\": \"No entries found matching 'Ossbridge household water'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 4,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Harrowfield residents water 2025"
+      },
+      "result": "{\"error\": \"No entries found matching 'Harrowfield residents water 2025'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 4,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Ossbridge residents water 2025"
+      },
+      "result": "{\"error\": \"No entries found matching 'Ossbridge residents water 2025'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 5,
+      "tool": "lookup",
+      "inputs": {
+        "query": "water tariff"
+      },
+      "result": "[{\"doc_id\": \"\", \"title\": \"Household water tariff\", \"snippet\": \"From 1 January 2025 the regional household water tariff is 142.35 tenge per cubic metre, in every district. The 2024 tariff was 131.80 tenge per cubic metre. One megalitre is 1,000 cubic metres. The tariff is charged on household use only.\"}]",
+      "latency_seconds": 0.0004
+    },
+    {
+      "turn": 5,
+      "tool": "lookup",
+      "inputs": {
+        "query": "tariff 2025"
+      },
+      "result": "{\"error\": \"No entries found matching 'tariff 2025'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 5,
+      "tool": "lookup",
+      "inputs": {
+        "query": "household tariff"
+      },
+      "result": "{\"error\": \"No entries found matching 'household tariff'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 5,
+      "tool": "lookup",
+      "inputs": {
+        "query": "water price"
+      },
+      "result": "{\"error\": \"No entries found matching 'water price'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 6,
+      "tool": "calculate",
+      "inputs": {
+        "expression": "7146*1000*142.35/90212"
+      },
+      "result": "11276.028687979426",
+      "latency_seconds": 0.0
+    },
+    {
+      "turn": 6,
+      "tool": "calculate",
+      "inputs": {
+        "expression": "3862*1000*142.35/52904"
+      },
+      "result": "10391.571525782549",
+      "latency_seconds": 0.0
+    },
+    {
+      "turn": 6,
+      "tool": "calculate",
+      "inputs": {
+        "expression": "7146*1000*142.35/90212 - 3862*1000*142.35/52904"
+      },
+      "result": "884.4571621968771",
+      "latency_seconds": 0.0
+    }
+  ],
+  "final_answer": "Harrowfield: 11,276.03 tenge per resident versus Ossbridge’s 10,391.57, a difference of 884.46 tenge per resident.\n\nANSWER: Harrowfield | 884.46",
+  "total_seconds": 16.0722
+}

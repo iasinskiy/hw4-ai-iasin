@@ -1,0 +1,71 @@
+{
+  "question_id": "Q-12",
+  "question": "Which district's 2025 budget works out higher per school pupil, Harrowfield or Tarnvale, and by how many thousand tenge per pupil?",
+  "tool_calls": [
+    {
+      "turn": 1,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Harrowfield 2025 budget pupil enrollment"
+      },
+      "result": "{\"error\": \"No entries found matching 'Harrowfield 2025 budget pupil enrollment'.\"}",
+      "latency_seconds": 0.0007
+    },
+    {
+      "turn": 1,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Tarnvale 2025 budget pupil enrollment"
+      },
+      "result": "{\"error\": \"No entries found matching 'Tarnvale 2025 budget pupil enrollment'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Harrowfield"
+      },
+      "result": "[{\"doc_id\": \"\", \"title\": \"The Nine Rivers Region - about these profiles\", \"snippet\": \"The Nine Rivers Region is a fictional region made up for this homework. It has twelve districts: Ossbridge, Ossford, Tarnvale, Kelmarsh, Brightwater, Stonecairn, Harrowfield, Lindenmoor, Redfen, Ashgrove, Millbrook, Coldharbour. Each district has one profile. Unless a figure says otherwise, populati...\"}, {\"doc_id\": \"\", \"title\": \"Harrowfield district profile (2025)\", \"snippet\": \"Founded in 1862 on the Harrow, Harrowfield covers 1,388.5 square kilometres. Its budget for 2025 was set at 16,021.7 million tenge. Household water use in 2025 came to 7,146 megalitres. There are 36 schools in the district, attended by 13,904 pupils in 2025/26. The 2025 census recorded 90,212 reside...\"}]",
+      "latency_seconds": 0.0004
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Tarnvale"
+      },
+      "result": "[{\"doc_id\": \"\", \"title\": \"The Nine Rivers Region - about these profiles\", \"snippet\": \"The Nine Rivers Region is a fictional region made up for this homework. It has twelve districts: Ossbridge, Ossford, Tarnvale, Kelmarsh, Brightwater, Stonecairn, Harrowfield, Lindenmoor, Redfen, Ashgrove, Millbrook, Coldharbour. Each district has one profile. Unless a figure says otherwise, populati...\"}, {\"doc_id\": \"\", \"title\": \"Tarnvale district profile (2025)\", \"snippet\": \"Tarnvale lies on the Tarn and was founded in 1854. The 2025 census counted 71,388 residents, up from 67,214 at the 2020 census, on an area of 2,106.9 square kilometres. The district runs 29 schools with 10,652 pupils enrolled in the 2025/26 school year. Its 2025 budget was 12,960.3 million tenge, an...\"}, {\"doc_id\": \"\", \"title\": \"Tarnvale district profile (ARCHIVED 2019)\", \"snippet\": \"ARCHIVED - superseded by the 2025 profile. Tarnvale lies on the Tarn and was founded in 1854. The 2019 estimate put the population at 65,030 residents on 2,106.9 square kilometres. Households used 4,980 megalitres of water in 2018. The district ran 27 schools with 9,870 pupils.\"}]",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 3,
+      "tool": "calculate",
+      "inputs": {
+        "expression": "16021.7*1000/13904"
+      },
+      "result": "1152.3086881472957",
+      "latency_seconds": 0.0
+    },
+    {
+      "turn": 3,
+      "tool": "calculate",
+      "inputs": {
+        "expression": "12960.3*1000/10652"
+      },
+      "result": "1216.7010889973715",
+      "latency_seconds": 0.0
+    },
+    {
+      "turn": 3,
+      "tool": "calculate",
+      "inputs": {
+        "expression": "16021.7*1000/13904 - 12960.3*1000/10652"
+      },
+      "result": "-64.39240085007577",
+      "latency_seconds": 0.0
+    }
+  ],
+  "final_answer": "ANSWER: Tarnvale | 64.4 thousand tenge per pupil",
+  "total_seconds": 9.2225
+}

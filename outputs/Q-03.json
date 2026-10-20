@@ -1,0 +1,107 @@
+{
+  "question_id": "Q-03",
+  "question": "In 2025, which district's households used more water per resident per day, Lindenmoor or Kelmarsh, and by how many litres per resident per day?",
+  "tool_calls": [
+    {
+      "turn": 1,
+      "tool": "lookup",
+      "inputs": {
+        "query": "2025 Lindenmoor household water use per resident per day litres"
+      },
+      "result": "{\"error\": \"No entries found matching '2025 Lindenmoor household water use per resident per day litres'.\"}",
+      "latency_seconds": 0.0004
+    },
+    {
+      "turn": 1,
+      "tool": "lookup",
+      "inputs": {
+        "query": "2025 Kelmarsh household water use per resident per day litres"
+      },
+      "result": "{\"error\": \"No entries found matching '2025 Kelmarsh household water use per resident per day litres'.\"}",
+      "latency_seconds": 0.0003
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Lindenmoor"
+      },
+      "result": "[{\"doc_id\": \"\", \"title\": \"The Nine Rivers Region - about these profiles\", \"snippet\": \"The Nine Rivers Region is a fictional region made up for this homework. It has twelve districts: Ossbridge, Ossford, Tarnvale, Kelmarsh, Brightwater, Stonecairn, Harrowfield, Lindenmoor, Redfen, Ashgrove, Millbrook, Coldharbour. Each district has one profile. Unless a figure says otherwise, populati...\"}, {\"doc_id\": \"\", \"title\": \"Lindenmoor district profile (2025)\", \"snippet\": \"Lindenmoor has 13 schools, which enrolled 4,115 pupils for the 2025/26 school year. The district, founded in 1911, stretches along the Linden over 1,015.7 square kilometres and keeps 402.3 km of paved road. Census population: 27,736 in 2020 and 29,051 in 2025. Households used 2,151,400 cubic metres ...\"}]",
+      "latency_seconds": 0.0004
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Kelmarsh"
+      },
+      "result": "[{\"doc_id\": \"\", \"title\": \"The Nine Rivers Region - about these profiles\", \"snippet\": \"The Nine Rivers Region is a fictional region made up for this homework. It has twelve districts: Ossbridge, Ossford, Tarnvale, Kelmarsh, Brightwater, Stonecairn, Harrowfield, Lindenmoor, Redfen, Ashgrove, Millbrook, Coldharbour. Each district has one profile. Unless a figure says otherwise, populati...\"}, {\"doc_id\": \"\", \"title\": \"Kelmarsh district profile (2025)\", \"snippet\": \"Founded in 1926 on the Kel, Kelmarsh covers 593.8 square kilometres. Its budget for 2025 was set at 3,906.2 million tenge. Household water use in 2025 came to 1,739 megalitres. There are 11 schools in the district, attended by 3,268 pupils in 2025/26. The 2025 census recorded 24,117 residents; the 2...\"}, {\"doc_id\": \"\", \"title\": \"Kelmarsh district profile (ARCHIVED 2019)\", \"snippet\": \"ARCHIVED - superseded by the 2025 profile. Kelmarsh, founded in 1926 on the Kel, had an estimated 22,110 residents in 2019 on 593.8 square kilometres. It ran 10 schools with 2,944 pupils, and households used 1,652 megalitres of water in 2018.\"}]",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 2,
+      "tool": "lookup",
+      "inputs": {
+        "query": "2025 household water rates districts"
+      },
+      "result": "{\"error\": \"No entries found matching '2025 household water rates districts'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 3,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Lindenmoor 2,151,400 cubic metres households 29,051"
+      },
+      "result": "{\"error\": \"No entries found matching 'Lindenmoor 2,151,400 cubic metres households 29,051'.\"}",
+      "latency_seconds": 0.0004
+    },
+    {
+      "turn": 3,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Kelmarsh 1,739 megalitres 24,117 residents 2025"
+      },
+      "result": "{\"error\": \"No entries found matching 'Kelmarsh 1,739 megalitres 24,117 residents 2025'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 3,
+      "tool": "lookup",
+      "inputs": {
+        "query": "Lindenmoor district profile 2025 water population households"
+      },
+      "result": "{\"error\": \"No entries found matching 'Lindenmoor district profile 2025 water population households'.\"}",
+      "latency_seconds": 0.0002
+    },
+    {
+      "turn": 4,
+      "tool": "calculate",
+      "inputs": {
+        "expression": "2151400000 / 29051 / 365"
+      },
+      "result": "202.89306995774555",
+      "latency_seconds": 0.0
+    },
+    {
+      "turn": 4,
+      "tool": "calculate",
+      "inputs": {
+        "expression": "1739000000 / 24117 / 365"
+      },
+      "result": "197.55291129260834",
+      "latency_seconds": 0.0
+    },
+    {
+      "turn": 4,
+      "tool": "calculate",
+      "inputs": {
+        "expression": "(2151400000 / 29051 / 365) - (1739000000 / 24117 / 365)"
+      },
+      "result": "5.34015866513721",
+      "latency_seconds": 0.0
+    }
+  ],
+  "final_answer": "Lindenmoor used more water: approximately 202.89 litres per resident per day, compared with Kelmarsh’s 197.55.\n\nANSWER: Lindenmoor | 5.34 litres per resident per day",
+  "total_seconds": 11.12
+}
